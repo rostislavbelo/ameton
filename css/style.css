@@ -336,6 +336,9 @@ button,
 .main-block__menu-item {
   margin-left: 8px;
   margin-bottom: 8px;
+  min-width: 160px;
+  -ms-flex-preferred-size: 0;
+      flex-basis: 0;
 }
 @media (max-width: 767px) {
   .main-block__menu-item {
@@ -344,7 +347,7 @@ button,
   }
 }
 .main-block__btn {
-  min-width: 160px;
+  min-width: inherit;
   min-height: 48px;
   font-size: 15px;
   font-weight: 700;
